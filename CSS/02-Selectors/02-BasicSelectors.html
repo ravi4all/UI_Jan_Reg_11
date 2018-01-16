@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent p {
+            color: red;
+        }
+        #parent .child_1 .innerChild p {
+            color: blue;
+        }
+        #parent .child_1 > p {
+            font-size: 20px;
+            color: darkorange;
+        }
+        h2,h3,h4 {
+            color: springgreen;
+        }
+        #parent + h2 {
+            font-size: 30px;
+            color: blue;
+        }
+        #parent ~ h2 {
+            font-size: 30px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic Selectors</h1>
+
+    <div id="parent">
+        <h2>This is a heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eveniet voluptatem eligendi sunt est atque modi nulla consequuntur suscipit. A debitis corporis deleniti autem corrupti id ea perferendis ipsum sit.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores rerum tempora saepe accusantium, nostrum obcaecati consectetur ratione vero? Libero laboriosam quos, quasi distinctio nesciunt iusto! Saepe nostrum laboriosam dolorem cupiditate!
+        </p>
+        <div class="child child_1">
+                <h3>This is a heading</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium debitis, nam architecto saepe, adipisci officiis voluptatibus quidem accusantium necessitatibus enim ea. Ratione aspernatur dolorem tempore adipisci quisquam quidem nesciunt.
+            </p>
+            <div class="innerChild">
+                    <h4>This is a heading</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit culpa, voluptatibus illum molestias vero, dignissimos quasi animi repellat modi velit delectus aut exercitationem, facilis debitis esse nobis cum dolores tenetur!
+                </p>
+            </div>
+        </div>
+        <div class="child">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium debitis, nam architecto saepe, adipisci officiis voluptatibus quidem accusantium necessitatibus enim ea. Ratione aspernatur dolorem tempore adipisci quisquam quidem nesciunt.
+                </p>
+                <div class="innerChild">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit culpa, voluptatibus illum molestias vero, dignissimos quasi animi repellat modi velit delectus aut exercitationem, facilis debitis esse nobis cum dolores tenetur!
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    <hr>
+
+    <h2>This heading is after parent div</h2>
+    <h2>This heading is after parent div</h2>
+    <h2>This heading is after parent div</h2>
+    
+</body>
+</html>

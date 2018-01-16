@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+    background-image: url("https://953dbb3e023d8d2081dc-a6ac47d7e9972b6bed5824eadfd0b772.ssl.cf3.rackcdn.com/wp-content/uploads/2017/09/GettyImages-809805878.jpg");
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 300px;
+    background-attachment: fixed;
+}
+#div_1 {
+    background-image: url("../../images/WebImages/avengers-thor.jpg");
+}
+#div_2 {
+    background-image: url("../../images/WebImages/the-joker-black-white.jpeg");
+}
+#div_3 {
+    background-image: url("../../images/WebImages/Terminator002.jpg");
+}
+#div_4 {
+    background-image: url("../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg");
+}
+#div_5 {
+    background-image: url("../../images/WebImages/batman_arkham_knight-1366x768.jpg");
+}
