@@ -1,0 +1,37 @@
+/* Pseudo Element - After and Before */
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#parent {
+    background-color: lightsalmon;
+    /* height: 390px; */
+}
+.column_1 {
+    float: left;
+    width: 30%;
+    /* background-color: lightcoral; */
+}
+
+.column_2 {
+    width: 30%;
+    /* float: left; */
+    float: right;
+    /* background-color: lightblue; */
+}
+
+.clear {
+    clear: both;
+}
+
+.div_1 {
+    background-color: lightgreen;
+    /* clear: both; */
+}
+
+.div_2 {
+    background-color: lightsteelblue;
+}

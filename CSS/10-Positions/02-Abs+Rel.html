@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent {
+            border: 5px solid red;
+            padding: 20px 20px 100px;
+            position: relative;
+        }
+        .child {
+            border: 5px solid blue;
+            padding: 20px 20px 100px;
+            position: relative;
+        }
+        .grandchild {
+            border: 5px solid green;
+            padding: 20px;
+            position: relative;
+        }
+        img {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Absolute  + Relative</h1>
+
+    <div id="parent">
+        <h2>This is inside parent</h2>
+        <div class="child">
+            <h2>This is inside child</h2>
+            <div class="grandchild">
+                <h2>
+                    This is inside grandchild
+                </h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam libero modi dolorem veniam. Reiciendis nihil neque ex, magni praesentium iure qui dolorem natus, et iusto vitae, inventore doloribus non ut.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A ea quisquam maxime veritatis tenetur, dolorum assumenda beatae, voluptatem odio aliquid amet corrupti. Ducimus expedita sed sequi minus, provident dolore consectetur?
+                    </p>
+                    <img src="../../images/hulk5-18463.gif" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
