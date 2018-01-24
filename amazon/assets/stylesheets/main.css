@@ -1,0 +1,116 @@
+/* 
+Gloabal Settings 
+*/
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
+/* 
+Header 
+*/
+#header {
+    background-color: #232F3E;
+}
+#header .nav-sprite {
+    background: url("../images/amazon_sprite.png") no-repeat;
+}
+#header .logo {
+    width: 10%;
+}
+#header .logo .nav-logo {
+    display: inline-block;
+    /* height: 30px;
+    width: 200px;
+    background-image: url("../images/amazon_sprite.png"); */
+    background-position: 4px -106px;
+    width: 125px;
+    height: 34px;
+    background-size: 426px;
+}
+#header .logo .extension {
+    display: inline-block;
+    background-position: -270px -109px;
+    width: 13px;
+    height: 14px;
+    background-size: 350px;
+}
+#header .logo .try-prime {
+    position: absolute;
+    left: 72px;
+    top: 19px;
+    font-size: 12px;
+}
+#header .logo a {
+    color: #48a3c6;
+}
+
+#header .search {
+    width: 60%;
+}
+#header .search select {
+    width: 50px;
+}
+#header .search input[type="text"] {
+    width: 75%;
+}
+#header .search input[type="submit"] {
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    background-position: -20px -580px;
+    border: none;
+    padding: 10px;
+    background-color: #F3A847;
+}
+
+#header .last-day {
+    width: 25%;
+}
+#header .last-day img {
+    width: 100%;
+}
+
+#main-navigation {
+
+}
+
+#banner {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}
