@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            border: 20px solid red;
+            border-color: red blue green orange;
+        }
+        div:after {
+            content: "";
+            border: 100px solid blue;
+            border-color: red transparent green;
+            border-top: none;
+            position: absolute;
+            left: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>After Before</h1>
+
+    <div></div>
+    
+</body>
+</html>
