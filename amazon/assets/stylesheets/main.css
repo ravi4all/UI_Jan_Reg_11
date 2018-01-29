@@ -205,11 +205,36 @@ Header
 }
 
 #banner {
-
+    min-height: 300px;
+}
+#banner img {
+    width: 100%;
+    min-height: inherit;
 }
 
 #content {
 
+}
+
+#main {
+    width: 70%;
+}
+#sidebar {
+    width: 25%;
+}
+
+#section_1 ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#section_1 ul li {
+    /* display: inline-block; */
+    float: left;
+    width: 23%;
+}
+#section_1 ul li img {
+    width: 100%;
 }
 
 #footer {
