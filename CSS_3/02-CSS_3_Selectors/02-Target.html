@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #form {
+            display: none;
+            border: 2px solid red;
+        }
+        #form:target {
+            display: block;
+        }
+        div:not(#form) {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Target Selector</h1>
+
+    <a href="#form">Login</a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div id="form">
+        <form action="#">
+            <table>
+                <tr>
+                    <td>Enter Name</td>
+                    <td>
+                        <input type="text" placeholder="Enter Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td>
+                        <input type="password" placeholder="Enter Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Login">
+                    </td>
+                    <td>
+                        <a href="#">Close</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div id="home">
+        <h2>This is home section</h2>
+    </div>
+
+    <div id="gallery">
+        <h2>This is gallery section</h2>
+    </div>
+
+    <div id="contact">
+        <h2>This is contact section</h2>
+    </div>
+
+    <div id="about">
+        <h2>This is about section</h2>
+    </div>
+    
+</body>
+</html>

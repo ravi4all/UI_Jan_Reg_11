@@ -67,6 +67,39 @@
                 </td>
             </tr>
             <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" onchange="output.value=value" min="1000" max="5000" value="1500" step="100">
+                </td>
+                <td>
+                    <output id="output">1500</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress value="30" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Choose File</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Number</td>
+                <td>
+                    <input type="text" placeholder="Enter Number" maxlength="10" pattern="[0-9]{10}" title="Enter a 10 digit number">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Message</td>
+                <td>
+                    <textarea placeholder="Enter message" spellcheck="false" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
                 <td>
                     <input type="reset">
                 </td>
