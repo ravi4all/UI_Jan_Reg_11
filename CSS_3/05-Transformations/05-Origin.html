@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+            width: 800px;
+            height: 400px;
+            padding: 10px;
+            margin: 0 auto;
+            text-align: center;
+            perspective: 500px;
+        }
+        img {
+            width: 45%;
+            height: 400px;
+            transition: 1s;
+            transform-origin: left;
+        }
+        img[alt="image_2"] {
+            /* transition-delay: 1s; */
+            transform-origin: right
+        }
+        div:hover img {
+            transform: rotateY(180deg);
+        }
+        div:hover img[alt="image_2"] {
+            transform: rotateY(-180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Origin</h1>
+
+    <div>
+        <img src="../../images/WebImages/super_minions.jpg" alt="image_1">
+        <img src="../../images/WebImages/super_minions.jpg" alt="image_2">
+    </div>
+    
+</body>
+</html>
