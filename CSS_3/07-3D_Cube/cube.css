@@ -1,0 +1,69 @@
+#container {
+    height: 300px;
+    width: 300px;
+    margin: 100px auto 0px;
+    position: relative;
+    /* transition: 5s; */
+    transform-style: preserve-3d;
+    /* transform-origin: bottom; */
+    animation: cube 5s infinite linear alternate;
+}
+#container div {
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    /* background-color: rgba(0,0,0,0.5); */
+    background-color: #fff;
+    border: 2px solid red;
+    transition: 2s;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* #container:hover {
+    transform: rotate3d(1,1,1,360deg);
+} */
+
+@keyframes cube {
+    0% {
+        /* transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); */
+        transform: rotate3d(0,0,0,0deg);
+    }
+    100% {
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
+
+#left {
+    transform-origin: left;
+    transform: rotateY(90deg);
+    background-image: url("../../images/hulk5-18463.gif");
+}
+
+#right {
+    transform-origin: right;
+    transform: rotateY(-90deg);
+    background-image: url("../../images/hulksmash2.gif");
+}
+
+#top {
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    background-image: url("../../images/WebImages/th_kung-fu-panda-2.gif");
+}
+
+#bottom {
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+    background-image: url("../../images/WebImages/tumblr_oi47j57OrC1sotuj5o2_500.gif");
+}
+
+#back {
+    transform: translateZ(-300px);
+    background-image: url("../../images/hulk-bigpunch.gif");
+}
+#front {
+    background-image: url("../../images/00-22.gif");
+}
