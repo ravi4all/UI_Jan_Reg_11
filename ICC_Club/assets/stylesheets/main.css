@@ -338,7 +338,42 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
     border-top-color: #16d9f9;
 }
 
-
+#main-navigation .dropdown {
+    position: absolute;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 630px;
+    top: 83px;
+    left: -240px;
+    padding: 15px 0px;
+    display: none;
+}
+#main-navigation .dropdown ul{
+    display: block;
+    column-count: 2;
+}
+#main-navigation .dropdown .col {
+    padding: 0px 12px;
+}
+#main-navigation .dropdown ul li {
+    padding: 0px;
+}
+#main-navigation .dropdown ul li a {
+    color: #087ac0;
+}
+#main-navigation .dropdown ul li:after {
+    display: none;
+}
+#main-navigation .dropdown:before {
+    content: "";
+    position: absolute;
+    border: 10px solid #fff;
+    border-color: transparent transparent #fff;
+    width: 10px;
+    top: -18px;
+    left: 50%;
+    margin-left: -10px;
+}
 
 /* Banner ---------------------- */
 #banner{ }
@@ -347,7 +382,9 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 #content {  }
 
 /* Main ---------------------- */
-#main {  }
+#main { 
+    width: 65%;
+ }
 
 /* Sidebar ---------------------- */
 #sidebar { }
@@ -359,3 +396,69 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 /* ==========================================================================
 	Common Functionalities & UI Elements
 ========================================================================== */
+
+/* Section_1 */
+#section_1 {
+    padding: 50px 0px;
+}
+#section_1 .news {
+    background-color: #2F3133;
+    width: 55%;
+    padding: 0px 15px;
+}
+#section_1 .news_link {
+    display: block;
+    color: #fff;
+}
+#section_1 ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#section_1 ul li {
+    display: inline-block;
+}
+#section_1 ul li a {
+    display: block;
+    padding: 12px;
+    color: #a3a4a5;
+}
+#section_1 .news_wrapper {
+    position: relative;
+    padding-left: 20px;
+}
+#section_1 .image_container {
+    position: relative;
+    overflow: hidden;
+}
+#section_1 .image_container img {
+    transition: 15s;
+}
+#section_1 .image_container:hover img {
+    transform: scale(1.2,1.2);
+}
+#section_1 .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    /* background-color: lightblue; */
+    background: linear-gradient(to bottom,transparent 30%,rgba(0,0,0,.7) 100%);
+}
+#section_1 .description {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}   
+#section_1 .description h3 {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+#section_1 .description h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
