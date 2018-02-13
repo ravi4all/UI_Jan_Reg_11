@@ -237,8 +237,12 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 }
 
 #topbar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
     background-color: #DAE0E4;
     padding-bottom: 5px;
+    z-index: 100;
 }
 #topbar ul {
     display: flex;
@@ -266,6 +270,10 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 
 /* Header ---------------------- */
 #header {
+    position: fixed;
+    width: 100%;
+    top: 38px;
+    z-index: 100;
     background-color: #001036;
 }
 #header a {
@@ -307,6 +315,28 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 }
 #header .search a i {
     font-size: 20px;
+}
+
+@media(max-width:1200px) {
+    #header a {
+        font-size: 12px;
+    }
+    #header .about_icc a {
+        padding: 23px 30px;
+    }
+    #header .search a {
+        padding: 20px 30px;
+    }
+    #header .logo .logo-image {
+        width: 79px;
+        height: 29px;
+        background-position: -1018px -778px;
+    }    
+}
+@media(max-width:992px) {
+    #header .about_icc, #header .search {
+        display: none;
+    }
 }
 
 /* Main Navigation ---------------------- */
@@ -375,15 +405,48 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
     margin-left: -10px;
 }
 
+@media(max-width:1200px) {
+    #main-navigation ul li {
+        padding: 20px;
+    }
+}
+@media(max-width:992px) {
+    #main-navigation ul {
+        display: none;
+    }
+}
+
+.sidebar_link {
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: none;
+}
+@media(max-width: 992px){
+    .sidebar_link {
+        display: block;
+    }
+}
+
 /* Banner ---------------------- */
 #banner{ }
 
 /* Content ---------------------- */
-#content {  }
+#content {  
+    margin-top: 120px;
+}
 
 /* Main ---------------------- */
 #main { 
     width: 65%;
+ }
+
+ @media(max-width: 992px){
+     #main {
+         width: 100%;
+     }
  }
 
 /* Sidebar ---------------------- */
@@ -403,7 +466,7 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 }
 #section_1 .news {
     background-color: #2F3133;
-    width: 55%;
+    width: 450px;
     padding: 0px 15px;
 }
 #section_1 .news_link {
@@ -426,6 +489,7 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 #section_1 .news_wrapper {
     position: relative;
     padding-left: 20px;
+    padding-right: 20px;
 }
 #section_1 .image_container {
     position: relative;
@@ -433,6 +497,7 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 }
 #section_1 .image_container img {
     transition: 15s;
+    width: 100%;
 }
 #section_1 .image_container:hover img {
     transform: scale(1.2,1.2);
@@ -461,4 +526,88 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
     font-size: 50px;
     line-height: 50px;
     text-transform: uppercase;
+}
+
+#section_1 .recent_news {
+    padding: 20px 0px 0px 20px;
+}
+#section_1 .recent_news .image {
+    margin-bottom: 12px;
+}
+#section_1 .recent_news .image img {
+    width: 100%;
+}
+#section_1 .recent_news a {
+    color: #000;
+    padding: 0px;
+}
+#section_1 .recent_news ul {
+    display: flex;
+    justify-content: space-between;
+}
+#section_1 .recent_news ul li{
+    display: block;
+}
+#section_1 .recent_news ul li:nth-child(2) {
+    margin: 0px 20px;
+}
+#section_1 .recent_news h4 {
+    font-size: 12px;
+    margin: 0px;
+}
+#section_1 .recent_news h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0px;
+}
+#section_1 .recent_news  span {
+    font-size: 12px;
+}
+
+
+#sidebar {
+    position: fixed;
+    top: 120px;
+    background-color: #2f3133;
+    right: 0px;
+    width: 32%;
+    transition: 1s;
+}
+#sidebar .widgets {
+    height: 380px;
+    overflow-y: scroll;
+}
+#sidebar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#sidebar .sidebar_header {
+    /* position: fixed; */
+    width: 100%;
+    top: 0px;
+    padding: 20px 0px;
+    text-align: center;
+    z-index: 1000;
+}
+#sidebar .sidebar_header h2 {
+    color: #F4BC46;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+#sidebar .image_container img {
+    width: 100%;
+}
+#sidebar .widgets ul li {
+    background-color: #333437;
+    padding: 20px 15px;
+}
+
+@media(max-width: 992px){
+    #sidebar {
+        right: -100%;
+    }
+    #sidebar:target {
+        right: 0%;
+    }
 }
