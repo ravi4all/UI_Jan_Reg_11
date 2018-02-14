@@ -1,0 +1,312 @@
+/* ==========================================================================
+	Global Settings
+========================================================================== */
+
+/*
+* Boxsizing set to border box http://css-tricks.com/box-sizing/
+*/
+
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+* Body settings, change it as required
+*/
+
+body { font-family: Arial, Helvetica, sans-serif; font-size: 1em; line-height: 1.4; }
+
+
+/*
+* Headings
+*/
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Ubuntu', Arial, Helvetica, sans-serif; font-weight:bold; text-rendering: optimizeLegibility; margin-top:0px; }
+
+
+/*
+* Paragraphs
+*/
+
+p { font-weight: normal; margin-top:0px; }
+
+
+/*
+* Links
+*/
+
+a { color: #2ba6cb; text-decoration: none; line-height: inherit; }
+a:hover { /*color: #2795b6;*/ }
+a:focus { color: #2ba6cb; outline: none; }
+p a, p a:visited { line-height: inherit; }
+
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+img {
+    vertical-align: middle; max-width: 100%; height: auto; -ms-interpolation-mode: bicubic;
+}
+
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset { border: 0; margin: 0; padding: 0; }
+
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+	Helper classes
+========================================================================== */
+
+/*
+* Floats
+*/
+
+.left { float: left; }
+
+.right { float: right; }
+
+
+/*
+* Text Alignment
+*/
+
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.text-center { text-align: center; }
+
+
+/*
+* Image Alignment
+*/
+
+img.alignleft { float:left; margin:0 10px 10px 0; display: inline;}
+
+img.alignright { float:right; margin:0 0px 10px 10px; display: inline;}
+
+img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bottom:10px;}
+
+
+/*
+* Image replacement
+*/
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*/
+
+/*
+* More semantic version as described in http://css-tricks.com/snippets/css/clear-fix/
+*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+* overflow method for clearing floats
+*/
+.floatbox { overflow:hidden; }
+
+/*
+* older method of adding empty tags for clearing
+*/
+.clear { clear: both; height:1px; line-height:1px; }
+
+
+/*
+* Chromeframe
+*/
+.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; }
+
+/*
+* Other
+*/
+
+
+/* ==========================================================================
+	Layout
+========================================================================== */
+
+
+/* Container ---------------------- */
+#container {  }
+
+/* Header ---------------------- */
+#header {  }
+
+/* Banner ---------------------- */
+#banner{ }
+
+/* Main Navigation ---------------------- */
+#main-navigation{ }
+
+/* Content ---------------------- */
+#content {  }
+
+/* Main ---------------------- */
+#main {  }
+
+/* Sidebar ---------------------- */
+#sidebar { }
+
+/* Footer ---------------------- */
+#footer { }
+
+
+/* ==========================================================================
+	Common Functionalities & UI Elements
+========================================================================== */
+
+/*
+* Post
+*/
+.post dl, .post dt, .post dd, .post ul, .post ol, .post li, .post h1, .post h2, .post h3, .post h4,
+.post h5, .post h6, .post pre, .post p, .post blockquote, .post th, .post td
+{ margin: 0; padding: 0; font-size: 14px; direction: ltr; }
+
+.post p { font-family: inherit; font-weight: normal; font-size: 14px; line-height: 1.6; margin-bottom: 17px; }
+.post p.lead { font-size: 17.5px; line-height: 1.6; margin-bottom: 17px; }
+
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6
+{ font-weight: bold; font-style: normal; color: #222222; text-rendering: optimizeLegibility; line-height: 1.1; margin-bottom: 14px; margin-top: 14px; }
+
+.post h1 small, .post h2 small, .post h3 small, .post h4 small, .post h5 small, .post h6 small
+{ font-size: 60%; color: #6f6f6f; line-height: 0; }
+
+.post h1 { font-size: 44px; }
+
+.post h2 { font-size: 37px; }
+
+.post h3 { font-size: 27px; }
+
+.post h4 { font-size: 23px; }
+
+.post h5 { font-size: 17px; }
+
+.post h6 { font-size: 14px; }
+
+.post code { font-weight: bold; background: #ffff99; }
+
+/* Post - Lists ---------------------- */
+.post ul, .post ol, .post dl { font-size: 14px; line-height: 1.6; margin-bottom: 17px; list-style-position: outside; }
+
+.post ul li ul, .post ul li ol { margin-left: 20px; margin-bottom: 0; }
+
+.post ol { margin-left: 20px; }
+.post ol li ul, .post ol li ol { margin-left: 20px; margin-bottom: 0; }
+
+/* Post - Blockquotes ---------------------- */
+.post blockquote, .post blockquote p { line-height: 1.5; color: #6f6f6f; }
+
+.post blockquote { margin: 0 0 17px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+.post blockquote cite { display: block; font-size: 13px; color: #555555; }
+.post blockquote cite:before { content: "\2014 \0020"; }
+.post blockquote cite a, .post blockquote cite a:visited { color: #555555; }
+
+
+
+/* ------------------------------------- 
+ 	Cross Browser CSS
+	Documentation: http://rafael.adm.br/css_browser_selector/
+------------------------------------- */
+/*Use to make CSS 3 Rounded Corners , Text Shadows and Box Shadows for IE */
+/* .ie .css3 { behavior: url("assets/javascripts/vendor/PIE.htc"); position:relative; } */
+
