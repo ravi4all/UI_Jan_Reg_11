@@ -1,13 +1,12 @@
 body {
     margin: 0px;
     overflow: hidden;
-    background-image: url('citytiled1.png');
 }
 #inner_container {
     height: 600px;
     overflow: hidden;
     width: 10000px;
-    background-image: url('citytiled1.png');
+    background-image: url('assets/citytiled1.png');
     background-size: auto 100%;
     transition: 1s;
 }

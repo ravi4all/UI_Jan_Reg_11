@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Key Press Events</h1>
+
+    <!-- Key Events : 
+        KeyPress
+        KeyDown
+        KeyUp -->
+        
+        <h2>KeyPress</h2>
+        <input type="text" placeholder="Enter Here" onkeypress="validate(this)">
+        <span id="span"></span>
+
+        <h2>KeyDown</h2>
+        <input type="text" placeholder="Enter Here" onkeydown="validate(this)">
+        <span id="span"></span>
+
+        <h2>KeyUp</h2>
+        <input type="text" placeholder="Enter Here" onkeyup="validate(this)">
+        <span id="span"></span>
+
+    <script>
+        function validate(obj){
+            // alert("Key Pressed...");
+            document.querySelector("#span").innerHTML = obj.value;
+        }
+    </script>
+</body>
+</html>
