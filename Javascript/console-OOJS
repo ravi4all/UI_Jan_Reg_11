@@ -1,0 +1,226 @@
+var x = 10;
+undefined
+typeof(x)
+"number"
+var x = 10.5;
+undefined
+typeof(x)
+"number"
+var x = "Hello";
+undefined
+typeof(x)
+"string"
+x instanceof String
+false
+var arr = [12,34,45,56,78]
+undefined
+typeof(arr)
+"object"
+arr instanceof Array
+true
+Array instanceof Object
+true
+arr instanceof Object
+true
+typeof(Object)
+"function"
+new String('abc')
+String {"abc"}
+s = new String('abc')
+String {"abc"}
+typeof(s)
+"object"
+s instanceof String
+true
+s1 = 'Hello'
+"Hello"
+s2 = new String('Hello')
+String {"Hello"}
+s1 == s2
+true
+s1 === s2
+false
+typeof(s1)
+"string"
+typeof(s2)
+"object"
+a = "10"
+"10"
+b = 10
+10
+a == b
+true
+a === b
+false
+typeof(Object)
+"function"
+typeof(Array)
+"function"
+typeof(String)
+"function"
+typeof(Number)
+"function"
+var obj = {
+	'id' : 101,
+	'name' : 'Ram',
+	'age' : 19
+}
+undefined
+obj instanceof Object
+true
+obj instanceof Array
+false
+obj.age
+19
+obj.id
+101
+obj.name
+"Ram"
+obj.__proto__
+{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+obj.college = 'IP'
+"IP"
+obj
+{id: 101, name: "Ram", age: 19, college: "IP"}
+function Person(name,city,age,gender){
+}
+undefined
+typeof(function)
+VM348:1 Uncaught SyntaxError: Unexpected token )
+var obj_1 = new Person()
+undefined
+obj_1
+Person {}
+obj_1.name = "Ramesh"
+"Ramesh"
+obj_1.city = "Pune"
+"Pune"
+obj_1
+Person {name: "Ramesh", city: "Pune"}city: "Pune"name: "Ramesh"__proto__: constructor: ƒ Person(name,city,age,gender)arguments: nullcaller: nulllength: 4name: "Person"prototype: {constructor: ƒ}__proto__: ƒ ()[[FunctionLocation]]: VM344:1[[Scopes]]: Scopes[1]__proto__: Object
+obj_1 instanceof Person
+true
+obj_1 instanceof Object
+true
+Person instanceof Object
+true
+var obj_2 = new Person("Shyam",'Delhi',22,'male')
+undefined
+obj_2
+Person {}
+var obj = {
+	'id' : 101,
+	'name' : 'Ram',
+	'age' : 19,
+	'details' : function(){
+		console.log('Name and age is',name,age)
+	}
+}
+undefined
+obj.details()
+VM414:6 Uncaught ReferenceError: age is not defined
+    at Object.details (<anonymous>:6:38)
+    at <anonymous>:1:5
+details @ VM414:6
+(anonymous) @ VM420:1
+var obj = {
+	'id' : 101,
+	'name' : 'Ram',
+	'age' : 19,
+	'details' : function(){
+		console.log('Name and age is',this.name,this.age);
+	}
+}
+undefined
+obj.details()
+VM427:6 Name and age is Ram 19
+undefined
+function Person(name,city,age,gender){
+	this.name = name;
+	this.city = city;
+	this.age = age;
+	this.gender = gender;
+}
+undefined
+var obj_2 = new Person("Shyam",'Delhi',22,'male')
+undefined
+obj_2
+Person {name: "Shyam", city: "Delhi", age: 22, gender: "male"}
+var obj_3 = new Person('John','Mumbai',27,'male')
+undefined
+obj_3
+Person {name: "John", city: "Mumbai", age: 27, gender: "male"}
+obj_3.company = 'TCS'
+"TCS"
+obj_3
+Person {name: "John", city: "Mumbai", age: 27, gender: "male", company: "TCS"}
+Person.prototype.language = "English"
+"English"
+Person
+ƒ Person(name,city,age,gender){
+	this.name = name;
+	this.city = city;
+	this.age = age;
+	this.gender = gender;
+}
+Person()
+undefined
+obj_2
+Person {name: "Shyam", city: "Delhi", age: 22, gender: "male"}age: 22city: "Delhi"gender: "male"name: "Shyam"__proto__: language: "English"constructor: ƒ Person(name,city,age,gender)__proto__: Object
+obj_2.__proto__.language
+"English"
+Object.create
+ƒ create() { [native code] }
+var obj = {
+	'id' : 101,
+	'name' : 'Ram',
+	'age' : 19,
+	'details' : function(){
+		function bio(){
+			console.log('Name and age is',this.name,this.age);
+		}
+	}
+}
+undefined
+obj.details()
+undefined
+obj.details.bio()
+VM531:1 Uncaught TypeError: obj.details.bio is not a function
+    at <anonymous>:1:13
+(anonymous) @ VM531:1
+obj.details
+ƒ (){
+		function bio(){
+			console.log('Name and age is',this.name,this.age);
+		}
+	}
+var obj = {
+	'id' : 101,
+	'name' : 'Ram',
+	'age' : 19,
+	'details' : function(){
+		function bio(){
+			console.log('Name and age is',this.name,this.age);
+		}
+		bio()
+	}
+}
+undefined
+obj.details()
+VM547:7 Name and age is undefined undefined
+undefined
+var obj = {
+	'id' : 101,
+	'name' : 'Ram',
+	'age' : 19,
+	'details' : function(){
+		var that = this;
+		function bio(){
+			console.log('Name and age is',that.name,that.age);
+		}
+		bio()
+	}
+}
+undefined
+obj.details()
+VM558:8 Name and age is Ram 19
+undefined
