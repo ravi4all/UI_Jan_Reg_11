@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="../model/model.js"></script>
+    <script src="../model/obj.js"></script>
+    <script src="../controller/controller.js"></script>
+</head>
+<body>
+
+    <div id="content">
+        <div class="row">
+            <div class="col col-1">
+                    <h1>Item CRUD</h1>
+                    <table>
+                            <tr>
+                                <td>Enter Item Name</td>
+                                <td>
+                                    <input type="text" placeholder="Item Name" id="box_1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Enter Item Price</td>
+                                <td>
+                                    <input type="text" placeholder="Item Price" id="box_2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Enter Item Description</td>
+                                <td>
+                                    <textarea placeholder="Item Desc" id="box_3" cols="30" rows="10"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button id="create">Add</button>
+                                    <button id="update">Update</button>
+                                    <button id="read">Read</button>
+                                    <button id="delete">Delete</button>
+                                    <button id="save">Save</button>
+                                    <button id="load">Load</button>
+                                    <button id="sort">Sort</button>
+                                </td>
+                            </tr>
+                        </table>
+            </div>
+            <div class="col col-2">
+                <h2>Item List</h2>
+                <ul id="itemList">
+                    <!-- <li id="itemList"></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
