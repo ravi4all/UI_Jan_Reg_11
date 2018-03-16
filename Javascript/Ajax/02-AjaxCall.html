@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>AJAX Call</h1>
+
+    <!-- <button onclick="ajaxCall()">AJAX Call</button> -->
+    <button onclick="exec_ajax()">Click Here</button>
+    <div id="content">
+
+    </div>
+
+    <script>
+        function ajaxCall(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                // console.log(this.status);
+                // console.log(this.readyState);
+                if(this.readyState == 4 && this.status == 200){
+                    console.log("Ajax Called...");
+                    // console.log(this.responseText);
+                    // data = this.responseText;
+                    // document.getElementById("content").innerHTML = data;
+                }
+            }
+
+            xhttp.open('get', 'http://freegeoip.net/json/github.com');
+            xhttp.send();
+        }
+        function non_ajax(){
+            console.log("Non Ajax");
+        }
+        function call_1(){
+            console.log("Call_1");
+        }
+        function call_2(){
+            console.log("Call_2");
+        }
+        function ajax_1(){
+            ajaxCall();
+            // non_ajax();
+            console.log("AJAX Call_1");
+        }
+        function call_3(){
+            console.log("Call_3");
+        }
+        function call_4(){
+            console.log("Call_4");
+        }
+        function ajax_2(){
+            ajaxCall();
+            // non_ajax();
+            console.log("AJAX Call_2");
+        }
+        function exec_ajax(){
+            call_1();
+            ajax_1();
+            call_2();
+            ajax_2();
+            call_3();
+            call_4();
+        }
+
+/*
+ readyState	Holds the status of the XMLHttpRequest.
+ 0: request not initialized
+ 1: server connection established
+ 2: request received
+ 3: processing request
+ 4: request finished and response is ready
+
+ status	Returns the status-number of a request
+ 200: "OK"
+ 403: "Forbidden"
+ 404: "Not Found"*/
+
+    </script>
+
+    
+</body>
+</html>

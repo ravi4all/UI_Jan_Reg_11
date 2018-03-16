@@ -1,0 +1,106 @@
+function parent(){
+	var x = 10;
+	function child(){
+		return x += 1;
+	}
+}
+undefined
+parent()
+undefined
+function parent(){
+	var x = 10;
+	function child(){
+		return x += 1;
+	}
+	child()
+}
+undefined
+parent()
+undefined
+function parent(){
+	var x = 10;
+	function child(){
+		return x += 1;
+	}
+	return child()
+}
+undefined
+parent()
+11
+parent()
+11
+function parent(){
+	var x = 10;
+	function child(){
+		return x += 1;
+	}
+	return child
+}
+undefined
+parent()
+ƒ child(){
+		return x += 1;
+	}
+parent()()
+11
+parent()()
+11
+var caller = parent()
+undefined
+caller()
+11
+caller()
+12
+caller()
+13
+caller()
+14
+function parent(){
+	var x = 10;
+	return function(){
+		return x += 1;
+	}
+}
+undefined
+parent()
+ƒ (){
+		return x += 1;
+	}
+var caller = parent();
+undefined
+typeof(caller)
+"function"
+caller()
+11
+caller()
+12
+caller()
+13
+caller()
+14
+function(){
+	var x = 10;
+	var y = 12;
+	console.log(x+y);
+}
+VM2563:1 Uncaught SyntaxError: Unexpected token (
+(function(){
+	var x = 10;
+	var y = 12;
+	console.log(x+y);
+})()
+VM2567:4 22
+undefined
+c = function(){
+	var x = 10;
+	var y = 12;
+	console.log(x+y);
+}
+ƒ (){
+	var x = 10;
+	var y = 12;
+	console.log(x+y);
+}
+c()
+VM2571:4 22
+undefined
