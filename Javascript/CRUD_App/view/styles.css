@@ -51,3 +51,6 @@
     color: #fff;
     background-color: lightslategray;
 }
+#itemList li.marked {
+    background-color: red;
+}
