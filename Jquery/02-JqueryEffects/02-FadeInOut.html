@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Fade In Fade Out</h1>
+
+    <button class="btn_1">Fade Out</button> 
+    <button class="btn_2">Fade In</button> 
+    <button class="btn_3">Toggle Fade</button> <br><br>
+    <img src="../../images/images/l34882-ironman-rigged-original-model--98611.jpg" alt="">
+    
+    <h2>This is a heading</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugit dolor quos cum maiores sequi quod quae veniam unde earum illum quis non, culpa molestiae porro deleniti, dolores officia provident.
+    </p>
+
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $(".btn_1").click(function(){
+            $("img").fadeOut(2000);
+        });
+        $(".btn_2").click(function(){
+            $("img").fadeIn(1000);
+        });
+        $(".btn_3").click(function(){
+            $("img").fadeToggle(1000);
+        });
+    </script>
+</body>
+</html>
