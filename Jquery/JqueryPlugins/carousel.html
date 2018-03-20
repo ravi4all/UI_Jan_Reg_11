@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="OwlCarousel2-2.3.2/OwlCarousel2-2.3.2/dist/assets/owl.carousel.min.css">
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="OwlCarousel2-2.3.2/OwlCarousel2-2.3.2/dist/owl.carousel.min.js"></script>
+</head>
+<body>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item"> 
+            <img src="../../images/WebImages/Terminator002.jpg" alt="">
+        </div>
+        <div class="item"> 
+            <img src="../../images/WebImages/the-joker-black-white.jpeg" alt="">
+        </div>
+        <div class="item"> 
+            <img src="../../images/WebImages/Kung-Fu-Panda-2-Movie.jpg" alt="">
+        </div>
+        <div class="item"> 
+            <img src="../../images/WebImages/avengers-thor.jpg" alt="">
+        </div>
+        <div class="item"> 
+            <img src="../../images/WebImages/chris_hemsworth__angry_thor.jpg" alt="">
+        </div>
+        <div class="item"> 
+            <img src="../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg" alt="">
+        </div>
+        <div class="item"> 
+            <img src="../../images/WebImages/Terminator002.jpg" alt="">
+        </div>
+    </div>
+    
+    <script>
+        // $(document).ready(function(){
+        //     $('.owl-carousel').owlCarousel();
+        // });
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+    </script>
+</body>
+</html>

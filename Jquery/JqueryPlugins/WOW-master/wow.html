@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="WOW-master/css/libs/animate.css">
+    <script src=".././../jquery-3.3.1.min.js"></script>
+    <script src="WOW-master/dist/wow.min.js"></script>
+    <style>
+        body {
+            margin: 0px;
+        }
+        #header {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            background-color: lightblue;
+        }
+        .row{
+            display: flex;
+        }
+        img {
+            width: 100%;
+        }
+        .col {
+            width: 50%;
+        }
+        .red,.green {
+            /* width: 50%; */
+            height: 300px;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header" class="wow fadeIn">
+        <h1>Wow JS Demo</h1>
+    </header>
+
+    <div id="banner" class="wow slideInLeft" data-wow-delay="2s">
+        <img src="../../../images/WebImages/chris-hemsworth-thor-2.jpg" alt="">
+    </div>
+
+    <div id="content">
+        <section id="section_1">
+            <div class="row">
+                <div class="col wow slideInLeft">
+                    <div class="red">
+                        <h2>This is red div</h2>
+                    </div>
+                </div>
+                <div class="col wow slideInRight">
+                    <div class="green">
+                        <h2>This is green div</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section_2">
+            <div class="row">
+                <div class="col wow rotateInUpRight">
+                    <div class="red">
+                        <h2>This is red div</h2>
+                    </div>
+                </div>
+                <div class="col wow rotateInUpLeft">
+                    <div class="green">
+                        <h2>This is green div</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section_3">
+            <div class="row">
+                <div class="col">
+                    <div class="red">
+                        <h2>This is red div</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="green">
+                        <h2>This is green div</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section_4">
+            <div class="row">
+                <div class="col">
+                    <div class="red">
+                        <h2>This is red div</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="green">
+                        <h2>This is green div</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section_5">
+            <div class="row">
+                <div class="col">
+                    <div class="red">
+                        <h2>This is red div</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="green">
+                        <h2>This is green div</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
